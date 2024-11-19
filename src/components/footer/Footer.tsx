@@ -1,7 +1,5 @@
 "use client";
-import CommonButton from "@/shared/CommonButton/CommonButton";
 import {
-  Box,
   IconButton,
   Menu,
   MenuItem,
@@ -12,14 +10,14 @@ import {
 } from "@mui/material";
 import Image from "next/image";
 import React, { useState } from "react";
-
 import ReorderIcon from "@mui/icons-material/Reorder";
 
-const Header = () => {
+const Footer = () => {
   const theme = useTheme();
   const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
   const open = Boolean(anchorEl);
   const isSmallScreen = useMediaQuery(theme.breakpoints.down(500));
+
   const handleMenuClick = (event: React.MouseEvent<HTMLButtonElement>) => {
     setAnchorEl(event.currentTarget);
   };
@@ -29,11 +27,17 @@ const Header = () => {
   };
 
   const menuItems = [
-    "AI Agent",
+    "Features",
     "Use Cases",
     "Agent Builder",
     "Features",
     "Pricing Plans",
+  ];
+
+  const socialMediaIcons = [
+    { src: "/img/socialMedia/x.png", alt: "X logo" },
+    { src: "/img/socialMedia/instagram.png", alt: "Instagram logo" },
+    { src: "/img/socialMedia/youtube.png", alt: "YouTube logo" },
   ];
 
   return (
@@ -62,9 +66,22 @@ const Header = () => {
         ))}
       </Stack>
 
-      <Box className="lg:ms-0 ms-auto">
-        <CommonButton title="Schedule a Demo" responsive={true} />
-      </Box>
+      <Stack
+        className="lg:ms-0 ms-auto lg:gap-8 sm:gap-6 gap-3"
+        direction="row"
+      >
+        {socialMediaIcons.map((icon, index) => (
+          <Image
+            key={index}
+            src={icon.src}
+            width={isSmallScreen ? 16 : 24}
+            height={isSmallScreen ? 16 : 24}
+            alt={icon.alt}
+            className="cursor-pointer"
+          />
+        ))}
+      </Stack>
+
       <IconButton
         sx={{
           backgroundColor: "#18181B80",
@@ -89,11 +106,11 @@ const Header = () => {
         open={open}
         onClose={handleMenuClose}
         anchorOrigin={{
-          vertical: "bottom",
+          vertical: "top",
           horizontal: "right",
         }}
         transformOrigin={{
-          vertical: "top",
+          vertical: "bottom",
           horizontal: "right",
         }}
         slotProps={{
@@ -119,4 +136,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Footer;

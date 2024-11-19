@@ -30,6 +30,12 @@ const CommonButton: React.FC<CommonButtonProps> = ({
             padding: "6px 12px",
           },
         }),
+        ...(responsive && {
+          [theme.breakpoints.down(500)]: {
+            padding: "4px 8px",
+            fontSize: "12px",
+          },
+        }),
       }}
     >
       {title}
