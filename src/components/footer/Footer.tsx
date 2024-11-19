@@ -59,7 +59,7 @@ const Footer = () => {
             key={index}
             variant="body1"
             component="span"
-            className="cursor-pointer text-subTitle text-base leading-5 select-none"
+            className="cursor-pointer !text-subTitle !text-base !leading-5 select-none"
           >
             {item}
           </Typography>

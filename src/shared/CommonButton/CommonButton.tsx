@@ -1,42 +1,22 @@
-import { Button, useTheme } from "@mui/material";
 import React from "react";
+import { Button } from "@mui/material";
 
 interface CommonButtonProps {
   title: string;
-  responsive: boolean;
+  responsive?: boolean;
 }
 
 const CommonButton: React.FC<CommonButtonProps> = ({
   title,
   responsive = false,
 }) => {
-  const theme = useTheme();
   return (
     <Button
-      sx={{
-        padding: "12px 24px",
-        border: "1px solid #FFFFFF26",
-        fontWeight: 500,
-        backgroundColor: "#8C45FF66",
-        color: "white",
-        "&:hover": {
-          backgroundColor: "#8C45FFAA",
-        },
-        boxShadow: " 0px 0px 6px 3px #FFFFFF40 inset",
-        backdropFilter: " blur(14px)",
-        textTransform: "capitalize",
-        ...(responsive && {
-          [theme.breakpoints.down(1024)]: {
-            padding: "6px 12px",
-          },
-        }),
-        ...(responsive && {
-          [theme.breakpoints.down(500)]: {
-            padding: "4px 8px",
-            fontSize: "12px",
-          },
-        }),
-      }}
+      className={` !border !border-[#FFFFFF26] font-medium !bg-[#8C45FF66] !text-white hover:bg-[#8C45FFAA] shadow-[0px_0px_6px_3px_#FFFFFF40_inset] capitalize backdrop-blur-lg  ${
+        responsive
+          ? "sm:!text-sm !text-xs lg:!px-6 lg:!py-3 sm:!px-3 sm:!py-1.5 !px-2 !py-1"
+          : "!px-6 !py-3"
+      }`}
     >
       {title}
     </Button>

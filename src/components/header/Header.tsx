@@ -55,14 +55,14 @@ const Header = () => {
             key={index}
             variant="body1"
             component="span"
-            className="cursor-pointer text-subTitle text-base leading-5 select-none"
+            className="cursor-pointer !text-subTitle !text-base !leading-5 select-none"
           >
             {item}
           </Typography>
         ))}
       </Stack>
 
-      <Box className="lg:ms-0 ms-auto">
+      <Box className="lg:ms-0 ms-auto ">
         <CommonButton title="Schedule a Demo" responsive={true} />
       </Box>
       <IconButton
