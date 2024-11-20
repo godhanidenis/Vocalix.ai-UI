@@ -44,7 +44,6 @@ const CustomDot = ({
 
 const CustomerTrust = () => {
   const [value, setValue] = useState<number | null>(2);
-
   const carouselRef = useRef<Carousel | null>(null);
 
   const nextSlide = () => {
@@ -80,7 +79,7 @@ const CustomerTrust = () => {
               showDots
               renderDotsOutside
               customDot={<CustomDot />}
-              dotListClass={`justify-center items-center sm:h-[70px] h-8 sm:gap-1 gap-0.5`}
+              dotListClass={`justify-center items-center sm:h-[70px] h-8 gap-0.5`}
             >
               {Array.from({ length: 12 }).map((_, index) => (
                 <Box
@@ -88,6 +87,22 @@ const CustomerTrust = () => {
                   className={`rounded-lg flex flex-col justify-center items-center lg:gap-8 sm:gap-5 gap-4 sm:py-6 sm:px-10 p-4 !backdrop-blur-[84px] bg-customers_trust_select w-full select-none`}
                 >
                   <Typography className="!text-base !leading-6 text-white text-center">
+                    <Box
+                      width={12}
+                      height={12}
+                      position="relative"
+                      className="mb-2"
+                    >
+                      <Image
+                        src="/img/invertedCommas.png"
+                        alt="invertedCommas png"
+                        draggable="false"
+                        fill
+                        style={{
+                          objectFit: "cover",
+                        }}
+                      />
+                    </Box>
                     Our customer satisfaction scores have skyrocketed since we
                     implemented the AI voice agent. It handles inquiries with
                     such natural language processing that our clients feel heard

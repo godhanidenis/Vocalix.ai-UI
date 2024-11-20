@@ -14,7 +14,8 @@ export default {
         "lg-900": "900px",
       },
       backgroundImage: {
-        "custom-background": "url('/img/backGroundImage.png')",
+        // "custom-background": "url('/img/backGroundImage.png')",
+        "custom-background": "url('/img/mainBg.jpg')",
         "live-transcript-bg": "url('/img/liveTranscriptBg.png')",
         gradient: "linear-gradient(291.9deg, #FFFFFF 62.65%, #000000 108.48%)",
         pricingCard_gradient:
