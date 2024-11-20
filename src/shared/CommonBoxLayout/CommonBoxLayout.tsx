@@ -14,7 +14,7 @@ const CommonBoxLayout: React.FC<CommonBoxLayoutProps> = ({
 }) => {
   return (
     <Stack className="md:gap-7 sm:gap-5 gap-4" justifyContent="center">
-      <p className="lg:text-7xl md:text-6xl sm:text-4xl text-2xl font-semibold !leading-[90.6px] text-center bg-gradient from-white to-black bg-clip-text text-transparent">
+      <p className="lg:text-7xl md:text-6xl sm:text-4xl text-2xl font-semibold lg:!leading-[90.6px] md:!leading-[70.6px] text-center bg-gradient from-white to-black bg-clip-text text-transparent">
         {title}
       </p>
 

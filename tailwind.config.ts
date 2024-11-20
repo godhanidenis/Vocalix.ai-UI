@@ -13,6 +13,8 @@ export default {
         "custom-background": "url('/img/backGroundImage.png')",
         "live-transcript-bg": "url('/img/liveTranscriptBg.png')",
         gradient: "linear-gradient(291.9deg, #FFFFFF 62.65%, #000000 108.48%)",
+        pricingCard_gradient:
+          "linear-gradient(180deg, rgba(37, 37, 37, 0.4) 0%, rgba(15, 15, 15, 0.4) 100%)",
       },
       colors: {
         background: "var(--background)",
