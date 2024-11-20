@@ -59,7 +59,7 @@ const PricingCard = () => {
         <Box
           key={index}
           onClick={() => setSelectedCard(index)}
-          className={`rounded-lg flex flex-col lg:gap-10 gap-6 lg:p-10 sm:p-6 p-4 !backdrop-blur-[84px] w-full cursor-pointer ${
+          className={`flex flex-col lg:gap-10 gap-6 lg:p-10 sm:p-6 p-4 !backdrop-blur-[84px] w-full cursor-pointer ${
             selectedCard === index
               ? "border gradient-border bg-pricingCard_gradient_select"
               : "border border-transparent bg-pricingCard_gradient"

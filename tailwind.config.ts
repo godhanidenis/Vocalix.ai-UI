@@ -26,6 +26,9 @@ export default {
 
         customers_trust_select:
           "linear-gradient(180deg, rgba(37, 37, 37, 0.4) 0%, rgba(15, 15, 15, 0.4) 100%)",
+
+        customers_trust_select_border:
+          "linear-gradient(180deg, rgba(140, 69, 255, 0.12) 0%, rgba(142, 73, 255, 0.27) 50%, rgba(171, 120, 255, 0.3) 100%)",
       },
       colors: {
         background: "var(--background)",
@@ -41,7 +44,6 @@ export default {
           "border-image-source":
             "linear-gradient(180deg, rgba(140, 69, 255, 0.12) 0%, rgba(142, 73, 255, 0.27) 50%, rgba(171, 120, 255, 0.3) 100%)",
           "border-image-slice": "1",
-          "border-radius": "0.5rem",
         },
       });
     },
