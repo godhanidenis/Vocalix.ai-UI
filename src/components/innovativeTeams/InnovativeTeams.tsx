@@ -51,6 +51,7 @@ const InnovativeTeams = () => {
         pauseOnHover
         autoPlay
         shouldResetAutoplay={false}
+        ssr={true}
       >
         {images.map((image, index) => (
           <Box

@@ -1,3 +1,4 @@
+import CustomerTrust from "@/components/customerTrust/CustomerTrust";
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
 import InnovativeTeams from "@/components/innovativeTeams/InnovativeTeams";
@@ -15,6 +16,7 @@ export default function Home() {
           <ScheduleADemo />
           <InnovativeTeams />
           <OurAiAgent />
+          <CustomerTrust />
           <PricingPlans />
           <Footer />
         </Stack>

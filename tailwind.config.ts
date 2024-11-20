@@ -11,7 +11,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        "lg-900": "900px", // Adding custom breakpoint
+        "lg-900": "900px",
       },
       backgroundImage: {
         "custom-background": "url('/img/backGroundImage.png')",
@@ -22,6 +22,9 @@ export default {
 
         pricingCard_gradient_select:
           "linear-gradient(180deg, rgba(132, 55, 255, 0.14) 0%, rgba(142, 73, 255, 0) 50%, rgba(142, 73, 255, 0.1) 100%)",
+
+        customers_trust_select:
+          "linear-gradient(180deg, rgba(37, 37, 37, 0.4) 0%, rgba(15, 15, 15, 0.4) 100%)",
       },
       colors: {
         background: "var(--background)",
