@@ -86,7 +86,10 @@ const CustomerTrust = () => {
                   key={index}
                   className={`rounded-lg flex flex-col justify-center items-center lg:gap-8 sm:gap-5 gap-4 sm:py-6 sm:px-10 p-4 !backdrop-blur-[84px] bg-customers_trust_select w-full select-none`}
                 >
-                  <Typography className="!text-base !leading-6 text-white text-center">
+                  <Typography
+                    component="div"
+                    className="!text-base !leading-6 text-white text-center"
+                  >
                     <Box
                       width={12}
                       height={12}
