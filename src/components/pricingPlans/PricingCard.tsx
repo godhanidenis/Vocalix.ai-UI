@@ -59,7 +59,7 @@ const PricingCard = () => {
         <Box
           key={index}
           onClick={() => setSelectedCard(index)}
-          className={`rounded-lg flex flex-col lg:gap-10 gap-6 lg:p-10 p-6 !backdrop-blur-[84px] w-full cursor-pointer ${
+          className={`rounded-lg flex flex-col lg:gap-10 gap-6 lg:p-10 sm:p-6 p-4 !backdrop-blur-[84px] w-full cursor-pointer ${
             selectedCard === index
               ? "border gradient-border bg-pricingCard_gradient_select"
               : "border border-transparent bg-pricingCard_gradient"
@@ -113,7 +113,7 @@ const PricingCard = () => {
               selectedCard === index ? "!bg-[#FFFFFF29]" : "!bg-[#FFFFFF3D]"
             }  `}
           />
-          <Stack className="lg:!gap-6 !gap-4">
+          <Stack className="lg:!gap-6 sm:!gap-4 !gap-3">
             <Typography className="!font-medium !text-base !leading-6 text-white">
               What you will get
             </Typography>
