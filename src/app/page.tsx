@@ -1,5 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import Header from "@/components/header/Header";
+import InnovativeTeams from "@/components/innovativeTeams/InnovativeTeams";
 import OurAiAgent from "@/components/ourAiAgent/OurAiAgent";
 import PricingPlans from "@/components/pricingPlans/PricingPlans";
 import ScheduleADemo from "@/components/scheduleADemo/ScheduleADemo";
@@ -12,6 +13,7 @@ export default function Home() {
         <Stack className="max-w-[1120px] mx-auto" gap={7}>
           <Header />
           <ScheduleADemo />
+          <InnovativeTeams />
           <OurAiAgent />
           <PricingPlans />
           <Footer />
